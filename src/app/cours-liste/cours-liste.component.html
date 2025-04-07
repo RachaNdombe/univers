@@ -1,0 +1,13 @@
+<div class="mx-auto lg:px-20 grid max-w-2xl grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-16 mt-16 lg:max-w-none">
+    <app-cours *ngFor="let cours of cours" [cours]="cours"></app-cours> <!-- Correction ici -->
+</div>
+
+<div>
+    <a 
+        [routerLink]="('/see')"
+        class="block px-4 py-2 text-sm text-gray-700"
+        role="menuitem"
+    >
+       
+    </a>
+</div>

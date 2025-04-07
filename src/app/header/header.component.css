@@ -1,0 +1,23 @@
+
+
+.navbar{
+    padding: 15px;
+    margin: 5px;
+   
+    
+}
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+.navbar-nav .nav-link {
+    color: blue; 
+    font-weight: 150px; 
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: orange;
+    text-decoration: none; 
+}
+

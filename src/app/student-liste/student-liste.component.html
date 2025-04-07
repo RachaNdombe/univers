@@ -1,0 +1,35 @@
+<div class="banner">
+    <img src="https://img.freepik.com/photos-premium/batiment-ecole-est-vert-amis-herbe-verte_934343-747.jpg?ga=GA1.1.1373382054.1737962578&semt=ais_hybrid" alt="banner" class="w-full h-full object-cover">
+    <div class="overlay">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">Mon éducation,mon futur.</h2>
+            <p class="mt-2 mb-4 text-lg text-white">Éclaircissez votre chemin académique ! Connectez-vous pour découvrir facilement les cours qui vous attendent, adaptés à votre faculté, département, filière et promotion. Ne laissez pas l'incertitude freiner votre succès !</p>
+            <a 
+        [routerLink]="('/register')"
+        class="mt-2 mb-4 text-lg text-white"
+        role="menuitem"
+    >
+       commencer
+    </a>
+        </div>
+    </div>
+</div>
+
+<div class="container mx-auto bg-white pb-8">
+    <div class="mx-auto px-6 lg:px-8">
+        <h2 class="text-4xl mt-12 lg:px-20 font-semibold"></h2>
+        <div class="mx-auto lg:px-20 grid max-w-2xl grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-16 mt-16 lg:max-w-none">
+            <app-student *ngFor="let etudiant of etudiants" [etudiant]="etudiant"></app-student>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a 
+        [routerLink]="('/voir')"
+        class="block px-4 py-2 text-sm text-gray-700"
+        role="menuitem"
+    >
+       
+    </a>
+</div>

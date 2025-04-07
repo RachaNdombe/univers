@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Formulaire Étudiant</h2>
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="nom_etudiant"></label>
+                <input type="text" class="form-control" id="nom_etudiant" name="nom_etudiant" value="{{etudiant.nom_etudiant}}" placeholder="Entrez le nom">
+            </div>
+            <div class="form-group">
+                <label for="prenom_etudiant">Prénom</label>
+                <input type="text" class="form-control" id="prenom_etudiant" name="prenom_etudiant" value="{{etudiant.prenom_etudiant}}" placeholder="Entrez le prénom">
+            </div>
+            <div class="form-group">
+                <label for="faculteId">Faculté</label>
+                <select class="form-control" id="faculteId" name="faculteId">
+                    <option value="">Sélectionnez une faculté</option>
+                    <option value="faculte1">Faculté des Sciences</option>
+                    <option value="faculte2">Faculté des Lettres</option>
+                    <option value="faculte3">Faculté de Droit</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="departementId">Département</label>
+                <select class="form-control" id="departementId" name="departementId">
+                    <option value="">Sélectionnez un département</option>
+                    <option value="departement1">Département de Mathématiques</option>
+                    <option value="departement2">Département de Biologie</option>
+                    <option value="departement3">Département de Philosophie</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="filiereId">Filière</label>
+                <select class="form-control" id="filiereId" name="filiereId">
+                    <option value="">Sélectionnez une filière</option>
+                    <option value="filiere1">Informatique</option>
+                    <option value="filiere2">Économie</option>
+                    <option value="filiere3">Histoire</option>
+                    
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="promotionId">Promotion</label>
+                <select class="form-control" id="promotionId" name="promotionId">
+                    <option value="">Sélectionnez une promotion</option>
+                    <option value="promotion1">L1</option>
+                    <option value="promotion2">L2</option>
+                    <option value="promotion3">L3</option>
+
+                </select>
+            </div>
+            
+            <button type="submit"  routerLink='/see'class="btn btn-primary">Soumettre</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
