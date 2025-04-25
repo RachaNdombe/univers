@@ -33,6 +33,7 @@ export class StudentComponent {
   promotions: Promotion[] = [];
 
   constructor(private etudiantService: EtudiantService) {}
+  
 
   async onSubmit() {
     const result = await this.etudiantService.create(
@@ -55,4 +56,5 @@ export class StudentComponent {
     this.etudiantService.getFilieres().then(filieres => this.filieres = filieres);
     this.etudiantService.getPromotions().then(promotions => this.promotions = promotions);
   }
+  
 }
